@@ -1,11 +1,16 @@
+package teste
+
+import modelo.ContaCorrente
+import modelo.ContaPoupanca
+
 fun testaComportamentosConta() {
     // Pode se declarar assim também sem seguir a ordem dos parametros, utilizando labels:
-    // val conta1 = Conta(titular = "Rafael", numero = 1000)
-    // val conta1 = Conta(numero = 1000, titular = "Rafael")
+    // val conta1 = modelo.Conta(titular = "Rafael", numero = 1000)
+    // val conta1 = modelo.Conta(numero = 1000, titular = "Rafael")
     val conta1 = ContaCorrente("Rafael", 1000)
-    println("Conta 1, titular: ${conta1.titular}")
-    println("Conta 1, número: ${conta1.numero}")
-    println("Conta 1, saldo: ${conta1.saldo}")
+    println("modelo.Conta 1, titular: ${conta1.titular}")
+    println("modelo.Conta 1, número: ${conta1.numero}")
+    println("modelo.Conta 1, saldo: ${conta1.saldo}")
     conta1.depositar(20.0)
     conta1.sacar(18.0)
     println("")

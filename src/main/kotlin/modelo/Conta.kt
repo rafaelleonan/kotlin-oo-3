@@ -1,6 +1,8 @@
-// Construtor primário: class Conta {}
-// Definir parametros no construtor primário: class Conta(titular: String, numero: Int, saldo: Double) {}
-// Definir as propriedades no construtor primário: class Conta(var titular: String, var numero: Int, var saldo: Double) {}
+package modelo
+
+// Construtor primário: class modelo.Conta {}
+// Definir parametros no construtor primário: class modelo.Conta(titular: String, numero: Int, saldo: Double) {}
+// Definir as propriedades no construtor primário: class modelo.Conta(var titular: String, var numero: Int, var saldo: Double) {}
 // init {
 //      //Executa alguma coisa durante inicialização do construtor da classe.
 //    }

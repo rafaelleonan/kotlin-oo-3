@@ -1,3 +1,5 @@
+package modelo
+
 class Cliente(
     val nome: String,
     val cpf: String,

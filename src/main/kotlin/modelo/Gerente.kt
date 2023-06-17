@@ -1,3 +1,5 @@
+package modelo
+
 class Gerente(
     nome: String,
     cpf: String,

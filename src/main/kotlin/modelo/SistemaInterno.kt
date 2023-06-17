@@ -1,3 +1,5 @@
+package modelo
+
 class SistemaInterno {
     fun entrar(gerente: Autenticavel, senha: Int) {
         if (gerente.autenticacao(senha)) {
