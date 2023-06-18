@@ -1,9 +1,10 @@
-package modelo
+package br.com.alura.modelo
 
 class Cliente(
-    val nome: String,
+    var nome: String,
     val cpf: String,
-    val senha: Int
+    val senha: Int,
+    val endereco: Endereco = Endereco()
 ): Autenticavel {
     override fun autenticacao(senha: Int): Boolean = this.senha == senha
 }

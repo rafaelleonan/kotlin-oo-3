@@ -1,4 +1,4 @@
-package teste
+package br.com.alura.teste
 
 fun testaLacos() {
     var i = 0

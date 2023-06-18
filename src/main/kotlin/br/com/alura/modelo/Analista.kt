@@ -1,8 +1,6 @@
-package modelo
+package br.com.alura.modelo
 
-import modelo.Funcionario
-
-class Auxiliar(
+class Analista(
     nome: String,
     cpf: String,
     salario: Double,

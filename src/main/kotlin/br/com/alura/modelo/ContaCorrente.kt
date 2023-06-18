@@ -1,9 +1,9 @@
-package modelo
+package br.com.alura.modelo
 
-import modelo.Conta
+import br.com.alura.modelo.Conta
 
 class ContaCorrente(
-    titular: String,
+    titular: Cliente,
     numero: Int
 ): Conta(
     titular = titular,

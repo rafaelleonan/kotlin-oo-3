@@ -1,4 +1,4 @@
-package modelo
+package br.com.alura.modelo
 
 class SistemaInterno {
     fun entrar(gerente: Autenticavel, senha: Int) {

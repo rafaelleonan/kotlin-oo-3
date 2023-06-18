@@ -1,9 +1,9 @@
-package teste
+package br.com.alura.teste
 
-import modelo.Analista
-import modelo.CalculadoraBonificacao
-import modelo.Diretor
-import modelo.Gerente
+import br.com.alura.modelo.Analista
+import br.com.alura.modelo.CalculadoraBonificacao
+import br.com.alura.modelo.Diretor
+import br.com.alura.modelo.Gerente
 
 fun testaFuncionario() {
     val funcionario = Analista(

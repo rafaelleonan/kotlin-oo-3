@@ -1,4 +1,4 @@
-package modelo
+package br.com.alura.modelo
 
 class Gerente(
     nome: String,

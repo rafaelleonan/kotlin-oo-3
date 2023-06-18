@@ -1,15 +1,18 @@
-package teste
+package br.com.alura.teste
 
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
+import br.com.alura.modelo.Cliente
+import br.com.alura.modelo.ContaCorrente
+import br.com.alura.modelo.ContaPoupanca
 
 fun testaContasDiferentes() {
+    val cliente1 = Cliente("Rafael", "000.000.000-00", 1001)
     val contaCorrente = ContaCorrente(
-        titular = "Rafael Leonan",
+        titular = cliente1,
         numero = 1001
     )
+    val cliente2 = Cliente("Leonan", "000.000.000-01", 1002)
     val contaPoupanca = ContaPoupanca(
-        titular = "Rafael Rodrigues",
+        titular = cliente2,
         numero = 1002
     )
 

@@ -1,4 +1,4 @@
-package modelo
+package br.com.alura.modelo
 
 abstract class Funcionario(
     val nome: String,

@@ -1,4 +1,4 @@
-package modelo
+package br.com.alura.modelo
 
 // Construtor primário: class modelo.Conta {}
 // Definir parametros no construtor primário: class modelo.Conta(titular: String, numero: Int, saldo: Double) {}
@@ -6,13 +6,23 @@ package modelo
 // init {
 //      //Executa alguma coisa durante inicialização do construtor da classe.
 //    }
-abstract class Conta (var titular: String = "", var numero: Int = 0) {
+
+abstract class Conta (var titular: Cliente, var numero: Int = 0) {
     var saldo = 0.0
         protected set
+    companion object {
+        var total = 0
+            private set
+    }
+
+    init {
+        total++
+    }
+
     fun depositar(deposito: Double) {
         if (deposito > 0.0) {
             this.saldo += deposito
-            println("Depositando R$ ${deposito} na conta do ${this.titular}...\nSaldo anterior: R$ ${this.saldo - deposito}\n" +
+            println("Depositando R$ ${deposito} na conta do ${this.titular.nome}...\nSaldo anterior: R$ ${this.saldo - deposito}\n" +
                     "Saldo atual: R\$ ${this.saldo}")
         }
     }

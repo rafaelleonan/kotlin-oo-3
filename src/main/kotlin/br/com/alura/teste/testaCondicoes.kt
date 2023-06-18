@@ -1,4 +1,4 @@
-package teste
+package br.com.alura.teste
 
 fun testaCondicoes(saldo: Double) {
     if (saldo > 0.0) println("modelo.Conta é positiva")

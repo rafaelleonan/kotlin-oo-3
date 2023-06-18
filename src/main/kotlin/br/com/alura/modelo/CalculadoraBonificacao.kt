@@ -1,6 +1,6 @@
-package modelo
+package br.com.alura.modelo
 
-import modelo.Funcionario
+import br.com.alura.modelo.Funcionario
 
 class CalculadoraBonificacao {
     var total: Double = 0.0
