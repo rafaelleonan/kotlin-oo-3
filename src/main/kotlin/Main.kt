@@ -2,21 +2,30 @@ import br.com.alura.modelo.*
 import br.com.alura.teste.testaContasDiferentes
 
 fun main() {
-    val cliente = object: Autenticavel{
-        val nome: String = "Leonan"
-        val cpf: String = "000.000.000-11"
-        val senha: Int = 1000
+    val endereco = Endereco(
+        logradouro = "Rua teste",
+        numero = 200,
+        cep = "00000-111"
+    )
+    val enderecoNovo = Endereco(
+        bairro = "Teste",
+        logradouro = "Rua bem ali",
+        cep = "00000-000"
+    )
 
-        override fun autenticacao(senha: Int): Boolean = this.senha == senha
-    }
+    println(endereco.equals(enderecoNovo))
 
-    val sistemaInterno = SistemaInterno()
-    sistemaInterno.entrar(cliente, 1000)
+    println(endereco.hashCode())
+    println(enderecoNovo.hashCode())
 
-    var cliente1 = Cliente("Rafael", "000.000.000-00", 12345)
-    var contaPoupanca = ContaPoupanca(cliente1, 1000)
+    println(endereco)
+    println(enderecoNovo)
 
-    testaContasDiferentes()
+    println("${endereco.javaClass}@${
+        Integer.toHexString(endereco.hashCode())}")
+}
 
-    println("Total de contas: ${Conta.total}")
+fun imprime(valor: Any): Any {
+    println(valor)
+    return valor
 }
