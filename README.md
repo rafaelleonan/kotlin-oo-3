@@ -1,4 +1,4 @@
-# kotlin-poo-3
+# kotlin-oo-3
 ## Kotlin: recursos da linguagem com pacotes e composição
 ### Conteúdo:
 - [X] Utilizando pacotes no código
